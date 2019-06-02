@@ -12,7 +12,7 @@ Now, each of us have a preferred style for implementing this architecture. Well,
 Easy peasy. Lemon squeezy.
 
 ```groovy
-implements 'com.wynsel.netherdrake:netherdrake:0.0.1'
+implementation 'com.wynsel.netherdrake:netherdrake:0.0.1'
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ class AddPersonActivity: NetherActivity<AddPersonPresenter>() {
 // Fragment
 class AddPersonFragment: NetherFragment<AddPersonPresenter>() {
 
-    override fun getLayout(): Int = R.layout.fragment_add_person // Yeah, I saw this one. Shut up!
+    override val getLayout: Int = R.layout.fragment_add_person
     override val initializePresenter: AddPersonPresenter = AddPersonPresenter(this)
 
     override fun beforeCreateView() {
@@ -109,7 +109,7 @@ class AddPersonPresenter(view: AddPersonActivity): NetherPresenter<AddPersonActi
 
     override val initializeInteractor: AddPersonInteractor = AddPersonInteractor(this)
 
-    // Manully set the router class to support routing.
+    // Manually set the router class to support routing.
     private val router = NetherRouter(baseActivity)
 
     override fun onPresenterReady() {

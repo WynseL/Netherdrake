@@ -22,7 +22,7 @@ abstract class NetherFragment<P: NetherContracts.Presenter>: Fragment(),
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         beforeCreateView()
-        return inflater.inflate(getLayout(), null, false)
+        return inflater.inflate(getLayout, null, false)
     }
 
     protected abstract fun beforeCreateView()
@@ -34,7 +34,7 @@ abstract class NetherFragment<P: NetherContracts.Presenter>: Fragment(),
         onViewReady()
     }
 
-    abstract fun getLayout(): Int
+    abstract val getLayout: Int
 
     abstract val initializePresenter: P
 

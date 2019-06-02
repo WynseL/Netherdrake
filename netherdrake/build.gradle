@@ -27,7 +27,7 @@ ext {
     siteUrl = 'https://github.com/WynseL/Netherdrake'
     gitUrl = 'https://github.com/WynseL/Netherdrake'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'wynsel'
     developerName = 'Chad Gonzales'
