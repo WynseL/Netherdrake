@@ -1,6 +1,6 @@
 # Netherdrake
 
-[![Download](https://api.bintray.com/packages/wynsel/maven/netherdrake/images/download.svg?version=0.0.1)](https://bintray.com/wynsel/maven/netherdrake/0.0.1/link)
+[![Download](https://api.bintray.com/packages/wynsel/maven/netherdrake/images/download.svg?version=0.0.2) ](https://bintray.com/wynsel/maven/netherdrake/0.0.2/link)
 
 Ah yes. The utility hero that can carry, gank and support. 
 
@@ -12,7 +12,7 @@ Now, each of us have a preferred style for implementing this architecture. Well,
 Easy peasy. Lemon squeezy.
 
 ```groovy
-implementation 'com.wynsel.netherdrake:netherdrake:0.0.1'
+implementation 'com.wynsel.netherdrake:netherdrake:0.0.2'
 ```
 
 ## Usage
